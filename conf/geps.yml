@@ -1,0 +1,1823 @@
+geps:
+    model: GEPS
+    model_run_retention_hours: 72
+    model_run_interval_hours: 12
+    product:
+        filename_pattern: CMC-geps-prob_{wx_variable}_latlon0p5x0p5_{YYYYMMDD_model_run}_P{forecast_hour}_all-products.grib2
+        variable:
+            HEATX_TGL_2m:
+                bands:
+                    1:
+                        product: ERC10
+                    2:
+                        product: ERC25
+                    3:
+                        product: ERC50
+                    4:
+                        product: ERC75
+                    5:
+                        product: ERC90
+                    6:
+                        product: ERSSTD
+                    7:
+                        product: ERMEAN
+                    8:
+                        product: ERC0
+                    9:
+                        product: ERC100
+                elevation: 2m
+                members: null
+                model_run:
+                    00Z:
+                        files_expected: 128
+                    12Z:
+                        files_expected: 128
+                geomet_layers:
+                    GEPS.DIAG.3_HMX.{}:
+                        forecast_hour: 003/384/PT3H
+            TCDC_SFC_0:
+                bands:
+                    1:
+                        product: ERC10
+                    2:
+                        product: ERC25
+                    3:
+                        product: ERC50
+                    4:
+                        product: ERC75
+                    5:
+                        product: ERC90
+                    6:
+                        product: ERC0
+                    7:
+                        product: ERC100
+                elevation: surface
+                members: null
+                model_run:
+                    00Z:
+                        files_expected: 128
+                    12Z:
+                        files_expected: 128
+                geomet_layers:
+                    GEPS.DIAG.3_NT.{}:
+                        forecast_hour: 003/384/PT3H
+            TEMP_TGL_2:
+                bands:
+                    1:
+                        product: ERC10
+                    2:
+                        product: ERC25
+                    3:
+                        product: ERC50
+                    4:
+                        product: ERC75
+                    5:
+                        product: ERC90
+                    6:
+                        product: ERSSTD
+                    7:
+                        product: ERMEAN
+                    8:
+                        product: ERC0
+                    9:
+                        product: ERC100
+                elevation: 2m
+                members: null
+                model_run:
+                    00Z:
+                        files_expected: 128
+                    12Z:
+                        files_expected: 128
+                geomet_layers:
+                    GEPS.DIAG.3_TT.{}:
+                        forecast_hour: 003/384/PT3H
+            WCF_TGL_2m:
+                bands:
+                    1:
+                        product: ERC10
+                    2:
+                        product: ERC25
+                    3:
+                        product: ERC50
+                    4:
+                        product: ERC75
+                    5:
+                        product: ERC90
+                    6:
+                        product: ERSSTD
+                    7:
+                        product: ERMEAN
+                    8:
+                        product: ERC0
+                    9:
+                        product: ERC100
+                elevation: 2m
+                members: null
+                model_run:
+                    00Z:
+                        files_expected: 128
+                    12Z:
+                        files_expected: 128
+                geomet_layers:
+                    GEPS.DIAG.3_WCF.{}:
+                        forecast_hour: 003/384/PT3H
+            WIND_TGL_10m:
+                bands:
+                    1:
+                        product: ERC10
+                    2:
+                        product: ERC25
+                    3:
+                        product: ERC50
+                    4:
+                        product: ERC75
+                    5:
+                        product: ERC90
+                    6:
+                        product: ERSSTD
+                    7:
+                        product: ERMEAN
+                    8:
+                        product: ERC0
+                    9:
+                        product: ERC100
+                elevation: 10m
+                members: null
+                model_run:
+                    00Z:
+                        files_expected: 128
+                    12Z:
+                        files_expected: 128
+                geomet_layers:
+                    GEPS.DIAG.3_WSPD.{}:
+                        forecast_hour: 003/384/PT3H
+            FPRATE-Accum-12h_SFC_0:
+                bands:
+                    1:
+                        product: ERGE1
+                    2:
+                        product: ERGE2.5
+                    3:
+                        product: ERGE5
+                    4:
+                        product: ERGE10
+                    5:
+                        product: ERGE15
+                    6:
+                        product: ERGE20
+                    7:
+                        product: ERGE25
+                    8:
+                        product: ERGE30
+                    9:
+                        product: ERGE40
+                    10:
+                        product: ERGE50
+                    11:
+                        product: ERC10
+                    12:
+                        product: ERC25
+                    13:
+                        product: ERC50
+                    14:
+                        product: ERC75
+                    15:
+                        product: ERC90
+                    16:
+                        product: ERSSTD
+                    17:
+                        product: ERMEAN
+                    18:
+                        product: ERC0
+                    19:
+                        product: ERC100
+                elevation: surface
+                members: null
+                model_run:
+                    00Z:
+                        files_expected: 32
+                    12Z:
+                        files_expected: 32
+                geomet_layers:
+                    GEPS.DIAG.12_FRMM.{}:
+                        forecast_hour: 012/384/PT12H
+            IPRATE-Accum-12h_SFC_0:
+                bands:
+                    1:
+                        product: ERGE1
+                    2:
+                        product: ERGE2.5
+                    3:
+                        product: ERGE5
+                    4:
+                        product: ERGE10
+                    5:
+                        product: ERGE15
+                    6:
+                        product: ERGE20
+                    7:
+                        product: ERGE25
+                    8:
+                        product: ERGE30
+                    9:
+                        product: ERGE40
+                    10:
+                        product: ERGE50
+                    11:
+                        product: ERC10
+                    12:
+                        product: ERC25
+                    13:
+                        product: ERC50
+                    14:
+                        product: ERC75
+                    15:
+                        product: ERC90
+                    16:
+                        product: ERSSTD
+                    17:
+                        product: ERMEAN
+                    18:
+                        product: ERC0
+                    19:
+                        product: ERC100
+                elevation: surface
+                members: null
+                model_run:
+                    00Z:
+                        files_expected: 32
+                    12Z:
+                        files_expected: 32
+                geomet_layers:
+                    GEPS.DIAG.12_PEMM.{}:
+                        forecast_hour: 012/384/PT12H
+            RPRATE-Accum-12h_SFC_0:
+                bands:
+                    1:
+                        product: ERGE1
+                    2:
+                        product: ERGE2.5
+                    3:
+                        product: ERGE5
+                    4:
+                        product: ERGE10
+                    5:
+                        product: ERGE15
+                    6:
+                        product: ERGE20
+                    7:
+                        product: ERGE25
+                    8:
+                        product: ERGE30
+                    9:
+                        product: ERGE40
+                    10:
+                        product: ERGE50
+                    11:
+                        product: ERGE75
+                    12:
+                        product: ERGE100
+                    13:
+                        product: ERGE150
+                    14:
+                        product: ERC10
+                    15:
+                        product: ERC25
+                    16:
+                        product: ERC50
+                    17:
+                        product: ERC75
+                    18:
+                        product: ERC90
+                    19:
+                        product: ERSSTD
+                    20:
+                        product: ERMEAN
+                    21:
+                        product: ERC0
+                    22:
+                        product: ERC100
+                elevation: surface
+                members: null
+                model_run:
+                    00Z:
+                        files_expected: 32
+                    12Z:
+                        files_expected: 32
+                geomet_layers:
+                    GEPS.DIAG.12_RNMM.{}:
+                        forecast_hour: 012/384/PT12H
+            SPRATE-Accum-12h_SFC_0:
+                bands:
+                    1:
+                        product: ERGE1
+                    2:
+                        product: ERGE2.5
+                    3:
+                        product: ERGE5
+                    4:
+                        product: ERGE10
+                    5:
+                        product: ERGE15
+                    6:
+                        product: ERGE20
+                    7:
+                        product: ERGE25
+                    8:
+                        product: ERGE30
+                    9:
+                        product: ERGE40
+                    10:
+                        product: ERGE50
+                    11:
+                        product: ERGE75
+                    12:
+                        product: ERC10
+                    13:
+                        product: ERC25
+                    14:
+                        product: ERC50
+                    15:
+                        product: ERC75
+                    16:
+                        product: ERC90
+                    17:
+                        product: ERSSTD
+                    18:
+                        product: ERMEAN
+                    19:
+                        product: ERC0
+                    20:
+                        product: ERC100
+                elevation: surface
+                members: null
+                model_run:
+                    00Z:
+                        files_expected: 32
+                    12Z:
+                        files_expected: 32
+                geomet_layers:
+                    GEPS.DIAG.12_SNMM.{}:
+                        forecast_hour: 012/384/PT12H
+            TPRATE-Accum-12h_SFC_0:
+                bands:
+                    1:
+                        product: ERGE1
+                    2:
+                        product: ERGE2.5
+                    3:
+                        product: ERGE5
+                    4:
+                        product: ERGE10
+                    5:
+                        product: ERGE15
+                    6:
+                        product: ERGE20
+                    7:
+                        product: ERGE25
+                    8:
+                        product: ERGE30
+                    9:
+                        product: ERGE40
+                    10:
+                        product: ERGE50
+                    11:
+                        product: ERGE75
+                    12:
+                        product: ERGE100
+                    13:
+                        product: ERGE150
+                    14:
+                        product: ERC10
+                    15:
+                        product: ERC25
+                    16:
+                        product: ERC50
+                    17:
+                        product: ERC75
+                    18:
+                        product: ERC90
+                    19:
+                        product: ERSSTD
+                    20:
+                        product: ERMEAN
+                    21:
+                        product: ERC0
+                    22:
+                        product: ERC100
+                elevation: surface
+                members: null
+                model_run:
+                    00Z:
+                        files_expected: 32
+                    12Z:
+                        files_expected: 32
+                geomet_layers:
+                    GEPS.DIAG.12_PRMM.{}:
+                        forecast_hour: 012/384/PT12H
+            WIND-Max-12h_TGL_10m:
+                bands:
+                    1:
+                        product: ERGE20
+                    2:
+                        product: ERGE30
+                    3:
+                        product: ERGE37
+                    4:
+                        product: ERGE40
+                    5:
+                        product: ERGE50
+                    6:
+                        product: ERGE62
+                    7:
+                        product: ERGE65
+                    8:
+                        product: ERGE75
+                    9:
+                        product: ERGE40
+                    10:
+                        product: ERGE90
+                    11:
+                        product: ERGE100
+                    12:
+                        product: ERGE118
+                    13:
+                        product: ERC10
+                    14:
+                        product: ERC25
+                    15:
+                        product: ERC50
+                    16:
+                        product: ERC75
+                    17:
+                        product: ERC90
+                    18:
+                        product: ERSSTD
+                    19:
+                        product: ERMEAN
+                    20:
+                        product: ERC0
+                    21:
+                        product: ERC100
+                elevation: 10m
+                members: null
+                model_run:
+                    00Z:
+                        files_expected: 32
+                    12Z:
+                        files_expected: 32
+                geomet_layers:
+                    GEPS.DIAG.12_UVMX.{}:
+                        forecast_hour: 012/384/PT12H
+            HGT_ISBL_0500:
+                bands:
+                    1:
+                        product: ERMEAN
+                    2:
+                        product: ERSSTD
+                elevation: 500m
+                members: null
+                model_run:
+                    00Z:
+                        files_expected: 32
+                    12Z:
+                        files_expected: 32
+                geomet_layers:
+                    GEPS.DIAG.12_GZ.500.{}:
+                        forecast_hour: 012/384/PT12H
+            PRMSL_MSL_0:
+                bands:
+                    1:
+                        product: ERMEAN
+                    2:
+                        product: ERSSTD
+                elevation: surface
+                members: null
+                model_run:
+                    00Z:
+                        files_expected: 32
+                    12Z:
+                        files_expected: 32
+                geomet_layers:
+                    GEPS.DIAG.12_PN-SLP.{}:
+                        forecast_hour: 012/384/PT12H
+            FPRATE-Accum-24h_SFC_0:
+                bands:
+                    1:
+                        product: ERGE1
+                    2:
+                        product: ERGE2.5
+                    3:
+                        product: ERGE5
+                    4:
+                        product: ERGE10
+                    5:
+                        product: ERGE15
+                    6:
+                        product: ERGE20
+                    7:
+                        product: ERGE25
+                    8:
+                        product: ERGE30
+                    9:
+                        product: ERGE40
+                    10:
+                        product: ERGE50
+                    11:
+                        product: ERC10
+                    12:
+                        product: ERC25
+                    13:
+                        product: ERC50
+                    14:
+                        product: ERC75
+                    15:
+                        product: ERC90
+                    16:
+                        product: ERSSTD
+                    17:
+                        product: ERMEAN
+                    18:
+                        product: ERC0
+                    19:
+                        product: ERC100
+                elevation: surface
+                members: null
+                model_run:
+                    00Z:
+                        files_expected: 31
+                    12Z:
+                        files_expected: 31
+                geomet_layers:
+                    GEPS.DIAG.24_FRMM.{}:
+                        forecast_hour: 024/384/PT12H
+            IPRATE-Accum-24h_SFC_0:
+                bands:
+                    1:
+                        product: ERGE1
+                    2:
+                        product: ERGE2.5
+                    3:
+                        product: ERGE5
+                    4:
+                        product: ERGE10
+                    5:
+                        product: ERGE15
+                    6:
+                        product: ERGE20
+                    7:
+                        product: ERGE25
+                    8:
+                        product: ERGE30
+                    9:
+                        product: ERGE40
+                    10:
+                        product: ERGE50
+                    11:
+                        product: ERC10
+                    12:
+                        product: ERC25
+                    13:
+                        product: ERC50
+                    14:
+                        product: ERC75
+                    15:
+                        product: ERC90
+                    16:
+                        product: ERSSTD
+                    17:
+                        product: ERMEAN
+                    18:
+                        product: ERC0
+                    19:
+                        product: ERC100
+                elevation: surface
+                members: null
+                model_run:
+                    00Z:
+                        files_expected: 31
+                    12Z:
+                        files_expected: 31
+                geomet_layers:
+                    GEPS.DIAG.24_PEMM.{}:
+                        forecast_hour: 024/384/PT12H
+            RPRATE-Accum-24h_SFC_0:
+                bands:
+                    1:
+                        product: ERGE1
+                    2:
+                        product: ERGE2.5
+                    3:
+                        product: ERGE5
+                    4:
+                        product: ERGE10
+                    5:
+                        product: ERGE15
+                    6:
+                        product: ERGE20
+                    7:
+                        product: ERGE25
+                    8:
+                        product: ERGE30
+                    9:
+                        product: ERGE40
+                    10:
+                        product: ERGE50
+                    11:
+                        product: ERGE75
+                    12:
+                        product: ERGE100
+                    13:
+                        product: ERGE150
+                    14:
+                        product: ERC10
+                    15:
+                        product: ERC25
+                    16:
+                        product: ERC50
+                    17:
+                        product: ERC75
+                    18:
+                        product: ERC90
+                    19:
+                        product: ERSSTD
+                    20:
+                        product: ERMEAN
+                    21:
+                        product: ERC0
+                    22:
+                        product: ERC100
+                elevation: surface
+                members: null
+                model_run:
+                    00Z:
+                        files_expected: 31
+                    12Z:
+                        files_expected: 31
+                geomet_layers:
+                    GEPS.DIAG.24_RNMM.{}:
+                        forecast_hour: 024/384/PT12H
+            SPRATE-Accum-24h_SFC_0:
+                bands:
+                    1:
+                        product: ERGE20
+                    2:
+                        product: ERGE30
+                    3:
+                        product: ERGE37
+                    4:
+                        product: ERGE40
+                    5:
+                        product: ERGE50
+                    6:
+                        product: ERGE62
+                    7:
+                        product: ERGE65
+                    8:
+                        product: ERGE75
+                    9:
+                        product: ERGE40
+                    10:
+                        product: ERGE90
+                    11:
+                        product: ERGE100
+                    12:
+                        product: ERGE118
+                    13:
+                        product: ERC10
+                    14:
+                        product: ERC25
+                    15:
+                        product: ERC50
+                    16:
+                        product: ERC75
+                    17:
+                        product: ERC90
+                    18:
+                        product: ERSSTD
+                    19:
+                        product: ERMEAN
+                    20:
+                        product: ERC0
+                    21:
+                        product: ERC100
+                elevation: surface
+                members: null
+                model_run:
+                    00Z:
+                        files_expected: 31
+                    12Z:
+                        files_expected: 31
+                geomet_layers:
+                    GEPS.DIAG.24_SNMM.{}:
+                        forecast_hour: 024/384/PT12H
+            TPRATE-Accum-24h_SFC_0:
+                bands:
+                    1:
+                        product: ERGE1
+                    2:
+                        product: ERGE2.5
+                    3:
+                        product: ERGE5
+                    4:
+                        product: ERGE10
+                    5:
+                        product: ERGE15
+                    6:
+                        product: ERGE20
+                    7:
+                        product: ERGE25
+                    8:
+                        product: ERGE30
+                    9:
+                        product: ERGE40
+                    10:
+                        product: ERGE50
+                    11:
+                        product: ERGE75
+                    12:
+                        product: ERGE100
+                    13:
+                        product: ERGE150
+                    14:
+                        product: ERGE200
+                    15:
+                        product: ERC10
+                    16:
+                        product: ERC25
+                    17:
+                        product: ERC50
+                    18:
+                        product: ERC75
+                    19:
+                        product: ERC90
+                    20:
+                        product: ERSSTD
+                    21:
+                        product: ERMEAN
+                    22:
+                        product: ERC0
+                    23:
+                        product: ERC100
+                elevation: surface
+                members: null
+                model_run:
+                    00Z:
+                        files_expected: 31
+                    12Z:
+                        files_expected: 31
+                geomet_layers:
+                    GEPS.DIAG.24_PRMM.{}:
+                        forecast_hour: 024/384/PT12H
+            HEATX-Max-24h_TGL_2m:
+                bands:
+                    1:
+                        product: ERGE25
+                    2:
+                        product: ERGE30
+                    3:
+                        product: ERGE35
+                    4:
+                        product: ERGE38
+                    5:
+                        product: ERGE40
+                    6:
+                        product: ERGE42
+                    7:
+                        product: ERC10
+                    8:
+                        product: ERC25
+                    9:
+                        product: ERC50
+                    10:
+                        product: ERC75
+                    11:
+                        product: ERC90
+                    12:
+                        product: ERSSTD
+                    13:
+                        product: ERMEAN
+                    14:
+                        product: ERC0
+                    15:
+                        product: ERC100
+                elevation: 2m
+                members: null
+                model_run:
+                    00Z:
+                        files_expected: 16
+                    12Z:
+                        files_expected: 16
+                geomet_layers:
+                    GEPS.DIAG.24_HMXX.{}:
+                        forecast_hour: 024/384/PT24H
+            TEMP-Min-24h_TGL_2m:
+                bands:
+                    1:
+                        product: ERLE-40
+                    2:
+                        product: ERLE-35
+                    3:
+                        product: ERLE-30
+                    4:
+                        product: ERLE-25
+                    5:
+                        product: ERLE-20
+                    6:
+                        product: ERLE-15
+                    7:
+                        product: ERLE-10
+                    8:
+                        product: ERLE-5
+                    9:
+                        product: ERLE0
+                    10:
+                        product: ERLE5
+                    11:
+                        product: ERLE10
+                    12:
+                        product: ERLE15
+                    13:
+                        product: ERLE20
+                    14:
+                        product: ERLE25
+                    15:
+                        product: ERC10
+                    16:
+                        product: ERC25
+                    17:
+                        product: ERC50
+                    18:
+                        product: ERC75
+                    19:
+                        product: ERC90
+                    20:
+                        product: ERSSTD
+                    21:
+                        product: ERMEAN
+                    22:
+                        product: ERC0
+                    23:
+                        product: ERC100
+                elevation: 2m
+                members: null
+                model_run:
+                    00Z:
+                        files_expected: 16
+                    12Z:
+                        files_expected: 16
+                geomet_layers:
+                    GEPS.DIAG.24_T7.{}:
+                        forecast_hour: 024/384/PT24H
+            TEMP-Max-24h_TGL_2m:
+                bands:
+                    1:
+                        product: ERGE-30
+                    2:
+                        product: ERGE-25
+                    3:
+                        product: ERGE-20
+                    4:
+                        product: ERGE-15
+                    5:
+                        product: ERGE-10
+                    6:
+                        product: ERGE-5
+                    7:
+                        product: ERGE0
+                    8:
+                        product: ERGE5
+                    9:
+                        product: ERGE10
+                    10:
+                        product: ERGE15
+                    11:
+                        product: ERGE20
+                    12:
+                        product: ERGE25
+                    13:
+                        product: ERGE30
+                    14:
+                        product: ERGE35
+                    15:
+                        product: ERGE40
+                    16:
+                        product: ERC10
+                    17:
+                        product: ERC25
+                    18:
+                        product: ERC50
+                    19:
+                        product: ERC75
+                    20:
+                        product: ERC90
+                    21:
+                        product: ERSSTD
+                    22:
+                        product: ERMEAN
+                    23:
+                        product: ERC0
+                    24:
+                        product: ERC100
+                elevation: 2m
+                members: null
+                model_run:
+                    00Z:
+                        files_expected: 16
+                    12Z:
+                        files_expected: 16
+                geomet_layers:
+                    GEPS.DIAG.24_T8.{}:
+                        forecast_hour: 024/384/PT24H
+            WCF-Min-24h_TGL_2m:
+                bands:
+                    1:
+                        product: ERGE50
+                    2:
+                        product: ERGE45
+                    3:
+                        product: ERGE40
+                    4:
+                        product: ERGE35
+                    5:
+                        product: ERGE30
+                    6:
+                        product: ERGE25
+                    7:
+                        product: ERGE20
+                    8:
+                        product: ERGE15
+                    9:
+                        product: ERGE10
+                    10:
+                        product: ERGE5
+                    11:
+                        product: ERGE0
+                    12:
+                        product: ERC10
+                    13:
+                        product: ERC25
+                    14:
+                        product: ERC50
+                    15:
+                        product: ERC75
+                    16:
+                        product: ERC90
+                    17:
+                        product: ERSSTD
+                    18:
+                        product: ERMEAN
+                    19:
+                        product: ERC0
+                    20:
+                        product: ERC100
+                elevation: 2m
+                members: null
+                model_run:
+                    00Z:
+                        files_expected: 16
+                    12Z:
+                        files_expected: 16
+                geomet_layers:
+                    GEPS.DIAG.24_WCFMIN.{}:
+                        forecast_hour: 024/384/PT24H
+            TPRATE-Accum-48h_SFC_0:
+                bands:
+                    1:
+                        product: ERGE1
+                    2:
+                        product: ERGE2.5
+                    3:
+                        product: ERGE5
+                    4:
+                        product: ERGE10
+                    5:
+                        product: ERGE15
+                    6:
+                        product: ERGE20
+                    7:
+                        product: ERGE25
+                    8:
+                        product: ERGE30
+                    9:
+                        product: ERGE40
+                    10:
+                        product: ERGE50
+                    11:
+                        product: ERGE75
+                    12:
+                        product: ERGE100
+                    13:
+                        product: ERGE150
+                    14:
+                        product: ERGE200
+                    15:
+                        product: ERC10
+                    16:
+                        product: ERC25
+                    17:
+                        product: ERC50
+                    18:
+                        product: ERC50
+                    19:
+                        product: ERC90
+                    20:
+                        product: ERSSTD
+                    21:
+                        product: ERMEAN
+                    22:
+                        product: ERC0
+                    23:
+                        product: ERC100
+                elevation: surface
+                members: null
+                model_run:
+                    00Z:
+                        files_expected: 15
+                    12Z:
+                        files_expected: 15
+                geomet_layers:
+                    GEPS.DIAG.48_PRMM.{}:
+                        forecast_hour: 048/384/PT24H
+            TPRATE-Accum-72h_SFC_0:
+                bands:
+                    1:
+                        product: ERGE1
+                    2:
+                        product: ERGE2.5
+                    3:
+                        product: ERGE5
+                    4:
+                        product: ERGE10
+                    5:
+                        product: ERGE15
+                    6:
+                        product: ERGE20
+                    7:
+                        product: ERGE25
+                    8:
+                        product: ERGE30
+                    9:
+                        product: ERGE40
+                    10:
+                        product: ERGE50
+                    11:
+                        product: ERGE75
+                    12:
+                        product: ERGE100
+                    13:
+                        product: ERGE150
+                    14:
+                        product: ERGE200
+                    15:
+                        product: ERC10
+                    16:
+                        product: ERC25
+                    17:
+                        product: ERC50
+                    18:
+                        product: ERC50
+                    19:
+                        product: ERC90
+                    20:
+                        product: ERSSTD
+                    21:
+                        product: ERMEAN
+                    22:
+                        product: ERC0
+                    23:
+                        product: ERC100
+                elevation: surface
+                members: null
+                model_run:
+                    00Z:
+                        files_expected: 14
+                    12Z:
+                        files_expected: 14
+                geomet_layers:
+                    GEPS.DIAG.72_PRMM.{}:
+                        forecast_hour: 072/384/PT24H
+            TPRATE-Accum-96h_SFC_0:
+                bands:
+                    1:
+                        product: ERGE1
+                    2:
+                        product: ERGE2.5
+                    3:
+                        product: ERGE5
+                    4:
+                        product: ERGE10
+                    5:
+                        product: ERGE15
+                    6:
+                        product: ERGE20
+                    7:
+                        product: ERGE25
+                    8:
+                        product: ERGE30
+                    9:
+                        product: ERGE40
+                    10:
+                        product: ERGE50
+                    11:
+                        product: ERGE75
+                    12:
+                        product: ERGE100
+                    13:
+                        product: ERGE150
+                    14:
+                        product: ERGE200
+                    15:
+                        product: ERC10
+                    16:
+                        product: ERC25
+                    17:
+                        product: ERC50
+                    18:
+                        product: ERC50
+                    19:
+                        product: ERC90
+                    20:
+                        product: ERSSTD
+                    21:
+                        product: ERMEAN
+                    22:
+                        product: ERC0
+                    23:
+                        product: ERC100
+                elevation: surface
+                members: null
+                model_run:
+                    00Z:
+                        files_expected: 13
+                    12Z:
+                        files_expected: 13
+                geomet_layers:
+                    GEPS.DIAG.96_PRMM.{}:
+                        forecast_hour: 096/384/PT24H
+            TPRATE-Accum-120h_SFC_0:
+                bands:
+                    1:
+                        product: ERGE1
+                    2:
+                        product: ERGE2.5
+                    3:
+                        product: ERGE5
+                    4:
+                        product: ERGE10
+                    5:
+                        product: ERGE15
+                    6:
+                        product: ERGE20
+                    7:
+                        product: ERGE25
+                    8:
+                        product: ERGE30
+                    9:
+                        product: ERGE40
+                    10:
+                        product: ERGE50
+                    11:
+                        product: ERGE75
+                    12:
+                        product: ERGE100
+                    13:
+                        product: ERGE150
+                    14:
+                        product: ERGE200
+                    15:
+                        product: ERC10
+                    16:
+                        product: ERC25
+                    17:
+                        product: ERC50
+                    18:
+                        product: ERC50
+                    19:
+                        product: ERC90
+                    20:
+                        product: ERSSTD
+                    21:
+                        product: ERMEAN
+                    22:
+                        product: ERC0
+                    23:
+                        product: ERC100
+                elevation: surface
+                members: null
+                model_run:
+                    00Z:
+                        files_expected: 12
+                    12Z:
+                        files_expected: 12
+                geomet_layers:
+                    GEPS.DIAG.120_PRMM.{}:
+                        forecast_hour: 120/384/PT24H
+#    member:
+#        filename_pattern: CMC-geps-raw_{wx_variable}_latlon0p5x0p5_{YYYYMMDD_model_run}_P{forecast_hour}_allmbrs.grib2
+#        members: 20
+#        bands:
+#            1:
+#                member: 1
+#            2:
+#                member: 2
+#            3:
+#                member: 3
+#            4:
+#                member: 4
+#            5:
+#                member: 5
+#            6:
+#                member: 6
+#            7:
+#                member: 7
+#            8:
+#                member: 8
+#            9:
+#                member: 9
+#            10:
+#                member: 10
+#            11:
+#                member: 11
+#            12:
+#                member: 12
+#            13:
+#                member: 13
+#            14:
+#                member: 14
+#            15:
+#                member: 15
+#            16:
+#                member: 16
+#            17:
+#                member: 17
+#            18:
+#                member: 18
+#            19:
+#                member: 19
+#            20:
+#                member: 20
+#            21:
+#                member: 21
+#            variable:
+#                HGT_ISBL_0010:
+#                    elevation: 10mb
+#                    model_run:
+#                        00Z:
+#                            files_expected: 161
+#                        12Z:
+#                            files_expected: 97
+#                    geomet_layers:
+#                        GEPS.MEM.PRES_GZ.10.{}.3h:
+#                            forecast_hours:
+#                                00Z: 000/192/PT3H
+#                                12Z: 000/192/PT3H
+#                        GEPS.MEM.PRES.GZ.10.{}.6h:
+#                            forecast_hours:
+#                                00Z: 000/768/PT6H
+#                                12Z: 000/384/PT6H
+#                HGT_ISBL_0050:
+#                    elevation: 50mb
+#                    model_run:
+#                        00Z:
+#                            files_expected: 161
+#                        12Z:
+#                            files_expected: 97
+#                    geomet_layers:
+#                        GEPS.MEM.PRES_GZ.50.{}.3h:
+#                            forecast_hours:
+#                                00Z: 000/192/PT3H
+#                                12Z: 000/192/PT3H
+#                        GEPS.MEM.PRES.GZ.50.{}.6h:
+#                            forecast_hours:
+#                                00Z: 000/768/PT6H
+#                                12Z: 000/384/PT6H
+#                HGT_ISBL_0100:
+#                    elevation: 100mb
+#                    model_run:
+#                        00Z:
+#                            files_expected: 161
+#                        12Z:
+#                            files_expected: 97
+#                    geomet_layers:
+#                        GEPS.MEM.PRES_GZ.100.{}.3h:
+#                            forecast_hours:
+#                                00Z: 000/192/PT3H
+#                                12Z: 000/192/PT3H
+#                        GEPS.MEM.PRES.GZ.100.{}.6h:
+#                            forecast_hours:
+#                                00Z: 000/768/PT6H
+#                                12Z: 000/384/PT6H
+#                HGT_ISBL_0200:
+#                    elevation: 200mb
+#                    model_run:
+#                        00Z:
+#                            files_expected: 161
+#                        12Z:
+#                            files_expected: 97
+#                    geomet_layers:
+#                        GEPS.MEM.PRES_GZ.200.{}.3h:
+#                            forecast_hours:
+#                                00Z: 000/192/PT3H
+#                                12Z: 000/192/PT3H
+#                        GEPS.MEM.PRES.GZ.200.{}.6h:
+#                            forecast_hours:
+#                                00Z: 000/768/PT6H
+#                                12Z: 000/384/PT6H
+#                HGT_ISBL_0250:
+#                    elevation: 250mb
+#                    model_run:
+#                        00Z:
+#                            files_expected: 161
+#                        12Z:
+#                            files_expected: 97
+#                    geomet_layers:
+#                        GEPS.MEM.PRES_GZ.250.{}.3h:
+#                            forecast_hours:
+#                                00Z: 000/192/PT3H
+#                                12Z: 000/192/PT3H
+#                        GEPS.MEM.PRES.GZ.250.{}.6h:
+#                            forecast_hours:
+#                                00Z: 000/768/PT6H
+#                                12Z: 000/384/PT6H
+#                HGT_ISBL_0500:
+#                    elevation: 500mb
+#                    model_run:
+#                        00Z:
+#                            files_expected: 161
+#                        12Z:
+#                            files_expected: 97
+#                    geomet_layers:
+#                        GEPS.MEM.PRES_GZ.500.{}.3h:
+#                            forecast_hours:
+#                                00Z: 000/192/PT3H
+#                                12Z: 000/192/PT3H
+#                        GEPS.MEM.PRES.GZ.500.{}.6h:
+#                            forecast_hours:
+#                                00Z: 000/768/PT6H
+#                                12Z: 000/384/PT6H
+#                HGT_ISBL_0850:
+#                    elevation: 850mb
+#                    model_run:
+#                        00Z:
+#                            files_expected: 161
+#                        12Z:
+#                            files_expected: 97
+#                    geomet_layers:
+#                        GEPS.MEM.PRES_GZ.850.{}.3h:
+#                            forecast_hours:
+#                                00Z: 000/192/PT3H
+#                                12Z: 000/192/PT3H
+#                        GEPS.MEM.PRES.GZ.850.{}.6h:
+#                            forecast_hours:
+#                                00Z: 000/768/PT6H
+#                                12Z: 000/384/PT6H
+#                HGT_ISBL_0925:
+#                    elevation: 925mb
+#                    model_run:
+#                        00Z:
+#                            files_expected: 161
+#                        12Z:
+#                            files_expected: 97
+#                    geomet_layers:
+#                        GEPS.MEM.PRES_GZ.925.{}.3h:
+#                            forecast_hours:
+#                                00Z: 000/192/PT3H
+#                                12Z: 000/192/PT3H
+#                        GEPS.MEM.PRES.GZ.925.{}.6h:
+#                            forecast_hours:
+#                                00Z: 000/768/PT6H
+#                                12Z: 000/384/PT6H
+#                HGT_ISBL_1000:
+#                    elevation: 1000mb
+#                    model_run:
+#                        00Z:
+#                            files_expected: 161
+#                        12Z:
+#                            files_expected: 97
+#                    geomet_layers:
+#                        GEPS.MEM.PRES_GZ.1000.{}.3h:
+#                            forecast_hours:
+#                                00Z: 000/192/PT3H
+#                                12Z: 000/192/PT3H
+#                        GEPS.MEM.PRES.GZ.1000.{}.6h:
+#                            forecast_hours:
+#                                00Z: 000/768/PT6H
+#                                12Z: 000/384/PT6H
+#                TMP_ISBL_0010:
+#                    elevation: 10mb
+#                    model_run:
+#                        00Z:
+#                            files_expected: 161
+#                        12Z:
+#                            files_expected: 97
+#                    geomet_layers:
+#                        GEPS.MEM.PRES_TT.1000.{}.3h:
+#                            forecast_hours:
+#                                00Z: 000/192/PT3H
+#                                12Z: 000/192/PT3H
+#                        GEPS.MEM.PRES_TT.10.{}.6h:
+#                            forecast_hours:
+#                                00Z: 000/768/PT6H
+#                                12Z: 000/384/PT6H
+#                TMP_ISBL_0050:
+#                    elevation: 50mb
+#                    model_run:
+#                        00Z:
+#                            files_expected: 161
+#                        12Z:
+#                            files_expected: 97
+#                    geomet_layers:
+#                        GEPS.MEM.PRES_TT.50.{}.3h:
+#                            forecast_hours:
+#                                00Z: 000/192/PT3H
+#                                12Z: 000/192/PT3H
+#                        GEPS.MEM.PRES_TT.50.{}.6h:
+#                            forecast_hours:
+#                                00Z: 000/768/PT6H
+#                                12Z: 000/384/PT6H
+#                TMP_ISBL_0100:
+#                    elevation: 100mb
+#                    model_run:
+#                        00Z:
+#                            files_expected: 161
+#                        12Z:
+#                            files_expected: 97
+#                    geomet_layers:
+#                        GEPS.MEM.PRES_TT.100.{}.3h:
+#                            forecast_hours:
+#                                00Z: 000/192/PT3H
+#                                12Z: 000/192/PT3H
+#                        GEPS.MEM.PRES_TT.100.{}.6h:
+#                            forecast_hours:
+#                                00Z: 000/768/PT6H
+#                                12Z: 000/384/PT6H
+#                TMP_ISBL_0200:
+#                    elevation: 200mb
+#                    model_run:
+#                        00Z:
+#                            files_expected: 161
+#                        12Z:
+#                            files_expected: 97
+#                    geomet_layers:
+#                        GEPS.MEM.PPRES_TT.200.{}.3h:
+#                            forecast_hours:
+#                                00Z: 000/192/PT3H
+#                                12Z: 000/192/PT3H
+#                        GEPS.MEM.PRES_TT.200.{}.6h:
+#                            forecast_hours:
+#                                00Z: 000/768/PT6H
+#                                12Z: 000/384/PT6H
+#                TMP_ISBL_0250:
+#                    elevation: 250mb
+#                    model_run:
+#                        00Z:
+#                            files_expected: 161
+#                        12Z:
+#                            files_expected: 97
+#                    geomet_layers:
+#                        GEPS.MEM.PRES_TT.250.{}.3h:
+#                            forecast_hours:
+#                                00Z: 000/192/PT3H
+#                                12Z: 000/192/PT3H
+#                        GEPS.MEM.PRES_TT.250.{}.6h:
+#                            forecast_hours:
+#                                00Z: 000/768/PT6H
+#                                12Z: 000/384/PT6H
+#                TMP_ISBL_0500:
+#                    elevation: 500mb
+#                    model_run:
+#                        00Z:
+#                            files_expected: 161
+#                        12Z:
+#                            files_expected: 97
+#                    geomet_layers:
+#                        GEPS.MEM.PRES_TT.500.{}.3h:
+#                            forecast_hours:
+#                                00Z: 000/192/PT3H
+#                                12Z: 000/192/PT3H
+#                        GEPS.MEM.PRES_TT.500.{}.6h:
+#                            forecast_hours:
+#                                00Z: 000/768/PT6H
+#                                12Z: 000/384/PT6H
+#                TMP_ISBL_0700:
+#                    elevation: 700mb
+#                    model_run:
+#                        00Z:
+#                            files_expected: 161
+#                        12Z:
+#                            files_expected: 97
+#                    geomet_layers:
+#                        GEPS.MEM.PRES_TT.700.{}.3h:
+#                            forecast_hours:
+#                                00Z: 000/192/PT3H
+#                                12Z: 000/192/PT3H
+#                        GEPS.MEM.PRES_TT.700.{}.6h:
+#                            forecast_hours:
+#                                00Z: 000/768/PT6H
+#                                12Z: 000/384/PT6H
+#                TMP_ISBL_0850:
+#                    elevation: 850mb
+#                    model_run:
+#                        00Z:
+#                            files_expected: 161
+#                        12Z:
+#                            files_expected: 97
+#                    geomet_layers:
+#                        GEPS.MEM.PRES_TT.850.{}.3h:
+#                            forecast_hours:
+#                                00Z: 000/192/PT3H
+#                                12Z: 000/192/PT3H
+#                        GEPS.MEM.PRES_TT.850.{}.6h:
+#                            forecast_hours:
+#                                00Z: 000/768/PT6H
+#                                12Z: 000/384/PT6H
+#                TMP_ISBL_0925:
+#                    elevation: 925mb
+#                    model_run:
+#                        00Z:
+#                            files_expected: 161
+#                        12Z:
+#                            files_expected: 97
+#                    geomet_layers:
+#                        GEPS.MEM.PRES_TT.925.{}.3h:
+#                            forecast_hours:
+#                                00Z: 000/192/PT3H
+#                                12Z: 000/192/PT3H
+#                        GEPS.MEM.PRES_TT.925.{}.6h:
+#                            forecast_hours:
+#                                00Z: 000/768/PT6H
+#                                12Z: 000/384/PT6H
+#                TMP_ISBL_1000:
+#                    elevation: 1000mb
+#                    model_run:
+#                        00Z:
+#                            files_expected: 161
+#                        12Z:
+#                            files_expected: 97
+#                    geomet_layers:
+#                        GEPS.MEM.PRES_TT.1000.{}.3h:
+#                            forecast_hours:
+#                                00Z: 000/192/PT3H
+#                                12Z: 000/192/PT3H
+#                        GEPS.MEM.PRES_TT.1000.{}.6h:
+#                            forecast_hours:
+#                                00Z: 000/768/PT6H
+#                                12Z: 000/384/PT6H
+#                RH_ISBL_0010:
+#                    elevation: 10mb
+#                    model_run:
+#                        00Z:
+#                            files_expected: 161
+#                        12Z:
+#                            files_expected: 97
+#                    geomet_layers:
+#                        GEPS.MEM.PRES.HR.1000.{}.3h:
+#                            forecast_hours:
+#                                00Z: 000/192/PT3H
+#                                12Z: 000/192/PT3H
+#                        GEPS.MEM.PRES_HR.10.{}.6h:
+#                            forecast_hours:
+#                                00Z: 000/768/PT6H
+#                                12Z: 000/384/PT6H
+#                RH_ISBL_0050:
+#                    elevation: 50mb
+#                    model_run:
+#                        00Z:
+#                            files_expected: 161
+#                        12Z:
+#                            files_expected: 97
+#                    geomet_layers:
+#                        GEPS.MEM.PRES.HR.50.{}.3h:
+#                            forecast_hours:
+#                                00Z: 000/192/PT3H
+#                                12Z: 000/192/PT3H
+#                        GEPS.MEM.PRES_HR.50.{}.6h:
+#                            forecast_hours:
+#                                00Z: 000/768/PT6H
+#                                12Z: 000/384/PT6H
+#                RH_ISBL_0100:
+#                    elevation: 100mb
+#                    model_run:
+#                        00Z:
+#                            files_expected: 161
+#                        12Z:
+#                            files_expected: 97
+#                    geomet_layers:
+#                        GEPS.MEM.PRES.HR.100.{}.3h:
+#                            forecast_hours:
+#                                00Z: 000/192/PT3H
+#                                12Z: 000/192/PT3H
+#                        GEPS.MEM.PRES_HR.100.{}.6h:
+#                            forecast_hours:
+#                                00Z: 000/768/PT6H
+#                                12Z: 000/384/PT6H
+#                RH_ISBL_0200:
+#                    elevation: 200mb
+#                    model_run:
+#                        00Z:
+#                            files_expected: 161
+#                        12Z:
+#                            files_expected: 97
+#                    geomet_layers:
+#                        GEPS.MEM.PRES.HR.200.{}.3h:
+#                            forecast_hours:
+#                                00Z: 000/192/PT3H
+#                                12Z: 000/192/PT3H
+#                        GEPS.MEM.PRES_HR.200.{}.6h:
+#                            forecast_hours:
+#                                00Z: 000/768/PT6H
+#                                12Z: 000/384/PT6H
+#                RH_ISBL_0250:
+#                    elevation: 250mb
+#                    model_run:
+#                        00Z:
+#                            files_expected: 161
+#                        12Z:
+#                            files_expected: 97
+#                    geomet_layers:
+#                        GEPS.MEM.PRES.HR.250.{}.3h:
+#                            forecast_hours:
+#                                00Z: 000/192/PT3H
+#                                12Z: 000/192/PT3H
+#                        GEPS.MEM.PRES_HR.250.{}.6h:
+#                            forecast_hours:
+#                                00Z: 000/768/PT6H
+#                                12Z: 000/384/PT6H
+#                RH_ISBL_0500:
+#                    elevation: 500mb
+#                    model_run:
+#                        00Z:
+#                            files_expected: 161
+#                        12Z:
+#                            files_expected: 97
+#                    geomet_layers:
+#                        GEPS.MEM.PRES.HR.500.{}.3h:
+#                            forecast_hours:
+#                                00Z: 000/192/PT3H
+#                                12Z: 000/192/PT3H
+#                        GEPS.MEM.PRES_HR.500.{}.6h:
+#                            forecast_hours:
+#                                00Z: 000/768/PT6H
+#                                12Z: 000/384/PT6H
+#                RH_ISBL_0700:
+#                    elevation: 700mb
+#                    model_run:
+#                        00Z:
+#                            files_expected: 161
+#                        12Z:
+#                            files_expected: 97
+#                    geomet_layers:
+#                        GEPS.MEM.PRES.HR.700.{}.3h:
+#                            forecast_hours:
+#                                00Z: 000/192/PT3H
+#                                12Z: 000/192/PT3H
+#                        GEPS.MEM.PRES_HR.700.{}.6h:
+#                            forecast_hours:
+#                                00Z: 000/768/PT6H
+#                                12Z: 000/384/PT6H
+#                RH_ISBL_0850:
+#                    elevation: 850mb
+#                    model_run:
+#                        00Z:
+#                            files_expected: 161
+#                        12Z:
+#                            files_expected: 97
+#                    geomet_layers:
+#                        GEPS.MEM.PRES.HR.850.{}.3h:
+#                            forecast_hours:
+#                                00Z: 000/192/PT3H
+#                                12Z: 000/192/PT3H
+#                        GEPS.MEM.PRES_HR.850.{}.6h:
+#                            forecast_hours:
+#                                00Z: 000/768/PT6H
+#                                12Z: 000/384/PT6H
+#
+#                RH_ISBL_0925:
+#                    elevation: 925mb
+#                    model_run:
+#                        00Z:
+#                            files_expected: 161
+#                        12Z:
+#                            files_expected: 97
+#                    geomet_layers:
+#                        GEPS.MEM.PRES.HR.925.{}.3h:
+#                            forecast_hours:
+#                                00Z: 000/192/PT3H
+#                                12Z: 000/192/PT3H
+#                        GEPS.MEM.PRES_HR.925.{}.6h:
+#                            forecast_hours:
+#                                00Z: 000/768/PT6H
+#                                12Z: 000/384/PT6H
+#                RH_ISBL_1000:
+#                    elevation: 1000mb
+#                    model_run:
+#                        00Z:
+#                            files_expected: 161
+#                        12Z:
+#                            files_expected: 97
+#                    geomet_layers:
+#                        GEPS.MEM.PRES.HR.1000.{}.3h:
+#                            forecast_hours:
+#                                00Z: 000/192/PT3H
+#                                12Z: 000/192/PT3H
+#                        GEPS.MEM.PRES_HR.1000.{}.6h:
+#                            forecast_hours:
+#                                00Z: 000/768/PT6H
+#                                12Z: 000/384/PT6H
+#                TMP_TGL_2m:
+#                    elevation: 2m
+#                    model_run:
+#                        00Z:
+#                            files_expected: 161
+#                        12Z:
+#                            files_expected: 97
+#                    geomet_layers:
+#                        GEPS.MEM.ETA_TT.{}.3h:
+#                            forecast_hours:
+#                                00Z: 000/192/PT3H
+#                                12Z: 000/192/PT3H
+#                        GEPS.MEM.ETA_TT.{}.6h:
+#                            forecast_hours:
+#                                00Z: 000/768/PT6H
+#                                12Z: 000/384/PT6H
+#                APCP_SFC_0:
+#                    elevation: surface
+#                    model_run:
+#                        00Z:
+#                            files_expected: 160
+#                        12Z:
+#                            files_expected: 96
+#                    geomet_layers:
+#                        GEPS.MEM.ETA_PR.{}.3h:
+#                            forecast_hours:
+#                                00Z: 003/192/PT3H
+#                                12Z: 003/192/PT3H
+#                        GEPS.MEM.ETA_PR.{}.6h:
+#                            forecast_hours:
+#                                00Z: 006/768/PT6H
+#                                12Z: 006/384/PT6H
+#                PRES_SFC_0:
+#                    elevation: surface
+#                    model_run:
+#                        00Z:
+#                            files_expected: 161
+#                        12Z:
+#                            files_expected: 97
+#                    geomet_layers:
+#                        GEPS.MEM.ETA_P0.{}.3h:
+#                            forecast_hours:
+#                                00Z: 000/192/PT3H
+#                                12Z: 000/192/PT3H
+#                        GEPS.MEM.ETA_P0.{}.6h:
+#                            forecast_hours:
+#                                00Z: 000/768/PT6H
+#                                12Z: 000/384/PT6H
+#                TCDC_SFC_0:
+#                    elevation: surface
+#                    model_run:
+#                        00Z:
+#                            files_expected: 161
+#                        12Z:
+#                            files_expected: 97
+#                    geomet_layers:
+#                        GEPS.MEM.ETA_NT.{}.3h:
+#                            forecast_hours:
+#                                00Z: 000/192/PT3H
+#                                12Z: 000/192/PT3H
+#                        GEPS.MEM.ETA_NT.{}.6h:
+#                            forecast_hours:
+#                                00Z: 000/768/PT6H
+#                                12Z: 000/384/PT6H
+#                TSOIL_DBLL_10cm:
+#                    elevation: 10cm
+#                    model_run:
+#                        00Z:
+#                            files_expected: 161
+#                        12Z:
+#                            files_expected: 97
+#                    geomet_layers:
+#                        GEPS.MEM.ETA_I0.{}.3h:
+#                            forecast_hours:
+#                                00Z: 000/192/PT3H
+#                                12Z: 000/192/PT3H
+#                        GEPS.MEM.ETA_I0.{}.6h:
+#                            forecast_hours:
+#                                00Z: 000/768/PT6H
+#                                12Z: 000/384/PT6H
+#                RH_TGL_2m:
+#                    elevation: 2m
+#                    model_run:
+#                        00Z:
+#                            files_expected: 161
+#                        12Z:
+#                            files_expected: 97
+#                    geomet_layers:
+#                        GEPS.MEM.ETA_HR.{}.3h:
+#                            forecast_hours:
+#                                00Z: 000/192/PT3H
+#                                12Z: 000/192/PT3H
+#                        GEPS.MEM.ETA_HR.{}.6h:
+#                            forecast_hours:
+#                                00Z: 000/768/PT6H
+#                                12Z: 000/384/PT6H
